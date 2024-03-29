@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template
 app = Flask(__name__)
 
@@ -16,4 +17,4 @@ def myth():
     return render_template('myth.html', the_title='Tiger in Myth and Legend')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8080)
